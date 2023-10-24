@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+/*
+Copyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.
+https://github.com/orioncactus/pretendard
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+*/
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Pretendard Black'), url('./woff2/Pretendard-Black.woff2')
+		format('woff2'), url('./woff/Pretendard-Black.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'),
+		url('./woff2/Pretendard-ExtraBold.woff2') format('woff2'),
+		url('./woff/Pretendard-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url('./woff2/Pretendard-Bold.woff2')
+		format('woff2'), url('./woff/Pretendard-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'),
+		url('./woff2/Pretendard-SemiBold.woff2') format('woff2'),
+		url('./woff/Pretendard-SemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url('./woff2/Pretendard-Medium.woff2')
+		format('woff2'), url('./woff/Pretendard-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'),
+		url('./woff2/Pretendard-Regular.woff2') format('woff2'),
+		url('./woff/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: local('Pretendard Light'), url('./woff2/Pretendard-Light.woff2')
+		format('woff2'), url('./woff/Pretendard-Light.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Pretendard ExtraLight'),
+		url('./woff2/Pretendard-ExtraLight.woff2') format('woff2'),
+		url('./woff/Pretendard-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 100;
+	font-display: swap;
+	src: local('Pretendard Thin'), url('./woff2/Pretendard-Thin.woff2')
+		format('woff2'), url('./woff/Pretendard-Thin.woff') format('woff');
+}
+
+* {
+   font-family: 'Pretendard';
+}
+
+#board-catetory {
+	border-bottom: solid 1px #b8b8b8;
+	text-align: center;
+	margin-bottom: 2vh;
+	font-family: Pretendard;
+}
+
+#board-catetory p {
+	padding: 5px;
+	font-size: 30px;
+	font-weight: 800;
+}
+
+#writeBody {
+	/* background-color: #f5f5f5; */
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+#writeBody form {
+	/* background-color: #fff; */
+	padding: 40px;
+	border-radius: 5px;
+	width: 60%;
+	/* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+	/* width: 600px; */
+}
+
+#writeBody label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-family: Pretendard;
+}
+
+input[type="text"], input[type="url"], input[type="date"], textarea,
+	select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-family: Pretendard;
+}
+
+select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #fff;
+}
+
+.date-range {
+	display: flex;
+	align-items: center;
+}
+
+textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+.button-container {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 20px;
+}
+
+.button-container button {
+	padding: 10px 20px;
+	background-color: #0ac2ff;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.button-container button[type="reset"] {
+	background-color: #a6a6a6;
+}
+
+.button-container .del {
+	background-color: #a6a6a6;
+}
+
+.button-container .del a {
+	color: #fff;
+}
+
+.del:hover a {
+	color: black;
+}
+
+.button-container button[type="button"] {
+	background-color: #f46d66;
+}
+
+.button-container button:hover {
+	background-color: #fff;
+	border: 1px solid #6c757d;
+	color: black;
+}
+
+.select_img {
+	width: 50px;
+	margin: 20px 0;
+}
+
+div.editable {
+	width: 1150px;
+	height: 500px;
+	border: 1px solid #dcdcdc;
+	overflow-y: auto;
+}
+
+.oriImg {
+	max-width: 250px;
+	height: auto; /* 높이를 자동으로 조절하여 비율 유지 */
+}

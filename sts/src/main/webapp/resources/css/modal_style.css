@@ -1,0 +1,93 @@
+.modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 15;
+}
+
+/* 모달 내용 스타일 */
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.modal-content {
+    border-radius: 12px;
+    width: 440px;
+    margin: 0px;
+    height: 597px;
+    box-shadow: none !important;
+    background-color: white;
+
+    z-index: 15;
+}
+
+.scroll_wrapper {
+    padding: 0px 30px;
+    overflow-y: auto;
+    max-height: 464px;
+}
+
+.modal-content .wrapper h1 {
+    padding: 24px 30px 24px;
+    font-size: 18px;
+
+    display: block;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    color: #333;
+}
+
+.wrapper {
+    padding: 0px;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.5px;
+    color: #666;
+}
+
+.tit_main {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #333;
+    font-weight: 500;
+}
+
+.modal-close-Btn {
+    display: block;
+    padding: 0px 10px;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 56px;
+    border-radius: 0px;
+    color: #00B2FF;
+    background-color: rgb(255, 255, 255);
+    border: 0px;
+    font-weight: 700;
+
+    border-radius: 12px;
+}
+
+.modal-close-Btn-box {
+    border-top: 1px solid rgb(247, 247, 247);
+    padding: 0px;
+}
+
+.modal-close-Btn span {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+}

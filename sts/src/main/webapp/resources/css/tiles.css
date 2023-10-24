@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Pretendard Black'), url('./woff2/Pretendard-Black.woff2') format('woff2'), url('./woff/Pretendard-Black.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url('./woff2/Pretendard-ExtraBold.woff2') format('woff2'), url('./woff/Pretendard-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url('./woff2/Pretendard-Bold.woff2') format('woff2'), url('./woff/Pretendard-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'), url('./woff2/Pretendard-SemiBold.woff2') format('woff2'), url('./woff/Pretendard-SemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url('./woff2/Pretendard-Medium.woff2') format('woff2'), url('./woff/Pretendard-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url('./woff2/Pretendard-Regular.woff2') format('woff2'), url('./woff/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: local('Pretendard Light'), url('./woff2/Pretendard-Light.woff2') format('woff2'), url('./woff/Pretendard-Light.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Pretendard ExtraLight'), url('./woff2/Pretendard-ExtraLight.woff2') format('woff2'), url('./woff/Pretendard-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 100;
+	font-display: swap;
+	src: local('Pretendard Thin'), url('./woff2/Pretendard-Thin.woff2') format('woff2'), url('./woff/Pretendard-Thin.woff') format('woff');
+}
+@font-face {
+	font-family: 'SUIT Variable';
+	font-weight: 100 900;
+	src: url('./SUIT-Variable.woff2') format('woff2-variations');
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Pretendard';
+	list-style: none;
+}
+
+body {
+	/* 	white-space: nowrap; */
+	overflow-x: scroll;
+	background-color: #FFF;
+}
+
+.www-footer {
+	justify-content: center;
+   	height: 100px;
+   	line-height: 100px;
+    font-size: 12px;
+    font-weight: 400;
+   	background-color: rgb(247, 247, 247);
+    color:grey;
+    text-align: center;
+   	vertical-align: baseline;
+   	position : relative;   
+}
+.member {
+	text-align: right;
+	margin-right: 10vh;
+	padding: 5px;
+}
+
+.member a {
+	margin-left : 10px; 
+	font-size: 12px;
+	color: #777777;
+}
+
+.wrapper {
+	border-top: #e7e7e7�solid�1px; 
+	background-color: #FFF;
+	/* 	position: fixed; */
+	width: 100%;
+	padding: 2px;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1)
+}
+
+nav .content {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	justify-content: center;
+}
+
+.wrapper .content ul {
+	list-style: none;
+	background: #FFF;
+}
+
+.wrapper .content ul li {
+	display: inline-block;
+	position: relative;
+}
+
+.wrapper .logo-img {
+	text-align: center;
+	margin-left: 8vh;
+}
+
+.wrapper .content ul li a {
+	display: block;
+	padding: 20px 25px;
+	color: #323c4e;
+	text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 500;
+	margin: 0 3vh;
+}
+
+.wrapper .content ul li ul.dropdown li {
+	display: block;
+}
+
+.wrapper .content ul li ul.dropdown {
+	width: 100%;
+	background: #FFF;
+	position: absolute;
+	z-index: 999;
+	display: none;
+}
+
+.wrapper .content ul li .main:hover {
+	color: #0af;
+	border-bottom: 3px solid #ff857f;
+}
+
+.wrapper .content ul li .dropdown a:hover {
+	color: #ff857f;
+}
+
+.wrapper .content ul li:hover ul.dropdown {
+	display: block;
+}
+
+.wrapper nav {
+	position: relative;
+	display: flex;
+}
+
+.search {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	margin-right: 10vh;
+}
+
+.search form {
+	color: #323c4e;
+	display: flex;
+	padding: 2px;
+	border: 1px solid;
+	border-radius: 50px;
+}
+
+.naviForm input[type="search"] {
+	border: none;
+	background: transparent;
+	margin: 0;
+	padding: 7px 8px;
+	font-size: 14px;
+	color: #dbdbdb;
+	border: 1px solid transparent;
+	border-radius: 50px;
+	width:200px;
+}
+
+.naviForm input[type="search"]::placeholder {
+	color: #bbb;
+}
+
+.naviForm button[type="submit"] {
+	text-indent: -999px;
+	overflow: hidden;
+	width: 40px;
+	padding: 0;
+	margin: 0;
+	border: 1px solid transparent;
+	border-radius: inherit;
+	background: transparent
+		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+		no-repeat center;
+	cursor: pointer;
+	opacity: 0.3;
+}
+
+.naviForm button[type="submit"]:hover {
+	opacity: 0.5;
+}
+
+.naviForm button[type="submit"]:focus, input[type="search"]:focus {
+	box-shadow: 0 0 3px 0 #0af;
+	border-color: #0af;
+	outline: none;
+}
