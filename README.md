@@ -1,5 +1,3 @@
-# Art.zip-FINAL
-
 # ArtSoda🎨
 ![logo_color](https://github.com/ArtInfoProject/FINAL/assets/68104804/29c1c240-2f3a-421f-af8f-77761c0ad392)
 ## 프로젝트 소개
